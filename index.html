@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Joystick Jesters - Cheapest Steam Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: {
+                purple: '#6c5ce7',
+                blue: '#00d2ff',
+                pink: '#ff0055',
+              },
+              dark: {
+                DEFAULT: '#0a0a0a',
+                surface: '#111111',
+                card: '#161616',
+              }
+            },
+            fontFamily: {
+              gaming: ['Orbitron', 'sans-serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'border-glow': 'border-glow 3s infinite alternate',
+              'shimmer-fast': 'shimmer 1s infinite linear',
+              'anime-float': 'anime-float 6s ease-in-out infinite',
+              'neon-pulse': 'neon-pulse 2s infinite',
+              'slide-up': 'slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-in': 'fade-in 0.4s ease-out forwards',
+            },
+            keyframes: {
+              'border-glow': {
+                '0%': { borderColor: 'rgba(108, 92, 231, 0.3)', boxShadow: '0 0 5px rgba(108, 92, 231, 0.2)' },
+                '100%': { borderColor: 'rgba(0, 210, 255, 0.8)', boxShadow: '0 0 20px rgba(0, 210, 255, 0.4)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' },
+              },
+              'anime-float': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              'neon-pulse': {
+                '0%, 100%': { opacity: 1, filter: 'brightness(1)' },
+                '50%': { opacity: 0.8, filter: 'brightness(1.5)' },
+              },
+              'slide-up': {
+                '0%': { opacity: 0, transform: 'translateY(30px) scale(0.95)' },
+                '100%': { opacity: 1, transform: 'translateY(0) scale(1)' },
+              },
+              'fade-in': {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #e2e2e2;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: auto !important;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-overflow-scrolling: touch;
+      }
+      .scroll-container {
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        touch-action: pan-y;
+      }
+      .anime-glow-card {
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .anime-glow-card:hover {
+        border-color: #00d2ff;
+        box-shadow: 0 0 30px rgba(0, 210, 255, 0.3), inset 0 0 10px rgba(108, 92, 231, 0.2);
+        transform: translateY(-8px) scale(1.02);
+      }
+      .glitch {
+        position: relative;
+        display: inline-block;
+      }
+      .glitch::before, .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: inherit;
+      }
+      .glitch::before {
+        left: 2px;
+        text-shadow: -2px 0 #ff00c1;
+        clip: rect(44px, 450px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
+      }
+      .glitch::after {
+        left: -2px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+        animation: glitch-anim2 1s infinite linear alternate-reverse;
+      }
+      @keyframes glitch-anim {
+        0% { clip: rect(31px, 9999px, 94px, 0); }
+        20% { clip: rect(62px, 9999px, 42px, 0); }
+        40% { clip: rect(16px, 9999px, 78px, 0); }
+        60% { clip: rect(58px, 9999px, 13px, 0); }
+        80% { clip: rect(83px, 9999px, 99px, 0); }
+        100% { clip: rect(2px, 9999px, 100px, 0); }
+      }
+      @keyframes glitch-anim2 {
+        0% { clip: rect(65px, 9999px, 100px, 0); }
+        20% { clip: rect(25px, 9999px, 40px, 0); }
+        40% { clip: rect(80px, 9999px, 90px, 0); }
+        60% { clip: rect(10px, 9999px, 30px, 0); }
+        80% { clip: rect(50px, 9999px, 60px, 0); }
+        100% { clip: rect(0, 9999px, 15px, 0); }
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #6c5ce7;
+        border-radius: 10px;
+      }
+      
+      .anime-reveal {
+        animation: anime-reveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      @keyframes anime-reveal {
+        from { opacity: 0; transform: translateY(30px) scale(0.95); filter: blur(10px); }
+        to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+  </head>
+  <body class="scroll-container">
+    <div id="root"></div>
+  </body>
+</html>
